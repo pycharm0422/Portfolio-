@@ -1,4 +1,5 @@
 import Section from './Section.jsx';
+import { dateRange } from '../utils.js';
 
 export default function Education({ items }) {
   return (
@@ -7,7 +8,7 @@ export default function Education({ items }) {
         {items.map((e, i) => (
           <article key={i} className="timeline-item card">
             <div className="timeline-meta">
-              <span className="date">{e.start} — {e.end}</span>
+              <span className="date">{dateRange(e)}</span>
               {e.grade && <span className="pill">{e.grade}</span>}
             </div>
             <h3>{e.degree}</h3>

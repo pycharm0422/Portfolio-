@@ -1,168 +1,287 @@
 {
   "profile": {
     "name": "Faraz Khan",
-    "title": "Software Engineer",
-    "tagline": "I build clean, fast and reliable software — and occasionally score goals.",
+    "title": "Software Engineer · Backend",
+    "tagline": "I build reliable, secure backend systems — currently for a national online examination platform at TCS iON.",
     "location": "India",
     "email": "farazkhan042122@gmail.com",
     "photo": "images/profile.svg",
     "resume": "",
     "about": [
-      "Hi! I'm a software engineer who enjoys turning ideas into products people actually use. I like working across the stack — from designing APIs and data pipelines to crafting responsive user interfaces.",
-      "Outside of work you'll find me on the football pitch, exploring new tech, or building small side projects (like the games further down this page)."
+      "I'm a backend engineer with 3+ years at TCS iON, working on the online examination platform that runs exams nationally. I work mostly in Java and Spring Boot across microservices: content ingestion, search, and the security work around HTTPS and identity verification.",
+      "Because the exam systems run on TCS iON's own Linux build, a good part of my work is with the OS team. I make the application behave on locked-down exam machines and trace failures through system logs. Before TCS I freelanced as a full-stack developer, building Django apps and deploying them on AWS and Heroku.",
+      "Outside of work you'll find me on the football pitch. I played for my college team."
     ],
     "socials": [
-      { "label": "GitHub", "url": "https://github.com/pycharm0422" },
-      { "label": "LinkedIn", "url": "https://www.linkedin.com/" },
-      { "label": "Email", "url": "mailto:farazkhan042122@gmail.com" }
+      {
+        "label": "GitHub",
+        "url": "https://github.com/pycharm0422"
+      },
+      {
+        "label": "LinkedIn",
+        "url": "https://www.linkedin.com/"
+      },
+      {
+        "label": "Email",
+        "url": "mailto:farazkhan042122@gmail.com"
+      }
     ]
   },
-
   "education": [
     {
-      "degree": "Bachelor of Technology — Computer Science",
-      "institution": "Your College Name",
-      "location": "City, Country",
-      "start": "2018",
-      "end": "2022",
-      "grade": "CGPA: 8.5 / 10",
+      "degree": "Bachelor of Engineering (B.E.)",
+      "institution": "SJC Institute of Technology (SJCIT)",
+      "location": "Chikkaballapur, Karnataka",
+      "grade": "",
       "highlights": [
-        "Member of the college football team",
-        "Core courses: Data Structures, Algorithms, DBMS, Operating Systems, Computer Networks"
-      ]
-    },
-    {
-      "degree": "Higher Secondary (Class XII) — Science",
-      "institution": "Your School Name",
-      "location": "City, Country",
-      "start": "2016",
-      "end": "2018",
-      "grade": "Percentage: 90%",
-      "highlights": []
+        "Played for the college football team",
+        "Built a college management system for SJCIT: attendance, marks and study materials"
+      ],
+      "period": "Graduated 2023"
     }
   ],
-
   "experience": [
     {
       "role": "Software Engineer",
-      "company": "Company Name",
-      "location": "City / Remote",
-      "start": "Jul 2022",
+      "company": "TCS iON",
+      "location": "",
+      "start": "Jun 2023",
       "end": "Present",
-      "description": "Working on backend services and web applications used by thousands of customers.",
+      "description": "Backend engineer on TCS iON's online examination platform, a microservices system that delivers high-stakes exams nationally on exam machines running TCS iON's own Linux build.",
       "highlights": [
-        "Designed and shipped REST APIs in Python, reducing response times by 40%",
-        "Built reusable React components adopted across 3 internal products",
-        "Set up CI/CD pipelines and automated testing"
+        "Cut search API retrieval time by ~35% over large exam datasets by tuning indexes, trimming query projections, removing N+1 queries and adding pagination",
+        "Implemented streaming HTTP multipart handling for mock-exam content bundles, with per-part validation and all-or-nothing processing",
+        "Migrated application traffic from HTTP to HTTPS with a fallback path, with no interruption to live examinations",
+        "Built Aadhaar-based identity verification with a cross-functional team, confirming candidate identity before and after each exam",
+        "Built a browser upgrader that detects, downloads and silently installs the required browser across the exam machines",
+        "Removed a startup dependency on another team's service by loading application context objects dynamically from the database",
+        "Worked with the OS team on the in-house Linux build and diagnosed field failures from application and system logs",
+        "Implemented watermarking and secure content display, refactored the React scientific calculator to support complex numbers, and delivered 15+ change requests"
       ],
-      "tech": ["Python", "Django", "React", "PostgreSQL", "Docker", "AWS"]
+      "tech": [
+        "Java",
+        "Spring Boot",
+        "Microservices",
+        "REST",
+        "SQL",
+        "Linux",
+        "React",
+        "Docker",
+        "Kafka",
+        "Redis",
+        "Jenkins"
+      ]
     },
     {
-      "role": "Software Engineering Intern",
-      "company": "Another Company",
-      "location": "City",
-      "start": "Jan 2022",
-      "end": "Jun 2022",
-      "description": "Contributed to the internal analytics dashboard.",
+      "role": "Freelance Full-Stack Developer",
+      "company": "Himalayan Labs",
+      "location": "Remote",
+      "period": "Before Jun 2023 · 6 months",
+      "description": "Freelance full-stack work, owning each delivery end to end: requirements, build, deployment and client communication.",
       "highlights": [
-        "Automated weekly reports, saving the team ~6 hours a week",
-        "Wrote data-cleaning scripts with Pandas"
+        "Built Django web applications with REST APIs",
+        "Wrote Python web-scraping scripts for data collection",
+        "Worked with MySQL and MongoDB, and deployed apps on AWS and Heroku"
       ],
-      "tech": ["Python", "Pandas", "Flask", "JavaScript"]
+      "tech": [
+        "Python",
+        "Django",
+        "REST APIs",
+        "MySQL",
+        "MongoDB",
+        "AWS",
+        "Heroku"
+      ]
     }
   ],
-
   "expertise": [
     {
       "category": "Languages",
       "skills": [
-        { "name": "Python", "level": 90 },
-        { "name": "JavaScript", "level": 85 },
-        { "name": "SQL", "level": 80 },
-        { "name": "Java", "level": 65 }
+        "Java",
+        "Python",
+        "JavaScript",
+        "SQL"
       ]
     },
     {
-      "category": "Frameworks & Libraries",
+      "category": "Backend",
       "skills": [
-        { "name": "React", "level": 85 },
-        { "name": "Django", "level": 80 },
-        { "name": "Flask / FastAPI", "level": 75 },
-        { "name": "Node.js", "level": 65 }
+        "Spring Boot",
+        "Microservices",
+        "REST APIs",
+        "Django",
+        "Kafka",
+        "Redis"
       ]
     },
     {
-      "category": "Tools & Cloud",
+      "category": "Frontend",
       "skills": [
-        { "name": "Git & GitHub", "level": 90 },
-        { "name": "Docker", "level": 75 },
-        { "name": "AWS", "level": 65 },
-        { "name": "Linux", "level": 80 }
+        "React",
+        "HTML",
+        "CSS",
+        "Tailwind CSS",
+        "AJAX"
+      ]
+    },
+    {
+      "category": "Databases",
+      "skills": [
+        "MySQL",
+        "MongoDB",
+        "Query tuning & indexing"
+      ]
+    },
+    {
+      "category": "DevOps & Cloud",
+      "skills": [
+        "Linux",
+        "Docker",
+        "Kubernetes",
+        "Jenkins",
+        "AWS",
+        "Heroku",
+        "Git"
+      ]
+    },
+    {
+      "category": "Security & Reliability",
+      "skills": [
+        "HTTPS / TLS",
+        "Identity verification",
+        "Log-based debugging",
+        "Performance tuning"
       ]
     }
   ],
-
   "projects": [
+    {
+      "title": "Snapverse — Social Media Platform",
+      "description": "An Instagram-style social network. Users can sign up, share photo posts, like and save posts without page reloads (AJAX), comment, follow and unfollow each other, and chat in a built-in messenger. Each user has a profile page. An extended version screens chat messages for abusive and hate speech and suspends offending accounts.",
+      "tech": [
+        "Django",
+        "Python",
+        "JavaScript",
+        "AJAX",
+        "Tailwind CSS",
+        "SQL"
+      ],
+      "github": "https://github.com/pycharm0422/mini_insta",
+      "live": "",
+      "image": ""
+    },
+    {
+      "title": "CampusHub — College Management System",
+      "description": "A college management portal built for SJCIT. Students and teachers have separate roles (teacher sign-up requires a verification password), and users can register with email, Google or Facebook. Teachers take attendance and enter exam marks; students see their marks and attendance, and study materials are organised by branch and semester.",
+      "tech": [
+        "Django",
+        "Python",
+        "JavaScript",
+        "HTML/CSS",
+        "SQL",
+        "Heroku"
+      ],
+      "github": "https://github.com/pycharm0422/institute-management",
+      "live": "",
+      "image": "images/projects/college-management.jpg"
+    },
+    {
+      "title": "RescueIndia — COVID-19 Relief Platform",
+      "description": "Built during India's second COVID-19 wave (2021) to connect people who needed help with people who could give it. Patients request telemedicine consultations by sharing vitals like oxygen saturation and pulse. Doctors, counsellors, volunteers and donors register to help. It also has a hospital oxygen-shortage tracker, a directory of health-care providers, a community message board, and online donations through Stripe.",
+      "tech": [
+        "Django",
+        "Python",
+        "Stripe",
+        "AWS S3",
+        "Heroku"
+      ],
+      "github": "https://github.com/pycharm0422/india_rescue_mission",
+      "live": "",
+      "image": ""
+    },
     {
       "title": "This Portfolio",
       "description": "A JSON-driven React portfolio with a built-in arcade of mini games. Every section on the page is generated from a single data file.",
-      "tech": ["React", "Vite", "GitHub Pages"],
+      "tech": [
+        "React",
+        "Vite",
+        "GitHub Pages"
+      ],
       "github": "https://github.com/pycharm0422/Portfolio-",
-      "live": "",
-      "image": ""
-    },
-    {
-      "title": "Task Manager API",
-      "description": "A RESTful task management backend with authentication, role-based access and full test coverage.",
-      "tech": ["Python", "FastAPI", "PostgreSQL", "Docker"],
-      "github": "https://github.com/pycharm0422",
-      "live": "",
-      "image": ""
-    },
-    {
-      "title": "Weather Dashboard",
-      "description": "A responsive dashboard that shows live weather and 7-day forecasts for any city, with charts and saved locations.",
-      "tech": ["React", "Chart.js", "OpenWeather API"],
-      "github": "https://github.com/pycharm0422",
       "live": "",
       "image": ""
     }
   ],
-
   "games": {
     "intro": "Getting bored? Take a break and play something. High scores are saved in your browser.",
     "list": [
-      { "id": "snake", "title": "Snake", "emoji": "🐍", "description": "Eat, grow, don't bite yourself. Arrow keys / WASD or the on-screen pad." },
-      { "id": "tictactoe", "title": "Tic Tac Toe", "emoji": "❌", "description": "Play a friend or try to beat the unbeatable computer." },
-      { "id": "memory", "title": "Memory Match", "emoji": "🧠", "description": "Flip cards and find all the pairs in as few moves as possible." },
-      { "id": "2048", "title": "2048", "emoji": "🔢", "description": "Slide and merge tiles to reach 2048. Arrow keys or swipe." },
-      { "id": "rps", "title": "Rock Paper Scissors", "emoji": "✊", "description": "Classic best-of-luck battle against the computer." },
-      { "id": "whack", "title": "Whack-a-Mole", "emoji": "🔨", "description": "Hit as many moles as you can in 30 seconds." }
+      {
+        "id": "snake",
+        "title": "Snake",
+        "emoji": "🐍",
+        "description": "Eat, grow, don't bite yourself. Arrow keys / WASD or the on-screen pad."
+      },
+      {
+        "id": "tictactoe",
+        "title": "Tic Tac Toe",
+        "emoji": "❌",
+        "description": "Play a friend or try to beat the unbeatable computer."
+      },
+      {
+        "id": "memory",
+        "title": "Memory Match",
+        "emoji": "🧠",
+        "description": "Flip cards and find all the pairs in as few moves as possible."
+      },
+      {
+        "id": "2048",
+        "title": "2048",
+        "emoji": "🔢",
+        "description": "Slide and merge tiles to reach 2048. Arrow keys or swipe."
+      },
+      {
+        "id": "rps",
+        "title": "Rock Paper Scissors",
+        "emoji": "✊",
+        "description": "Classic best-of-luck battle against the computer."
+      },
+      {
+        "id": "whack",
+        "title": "Whack-a-Mole",
+        "emoji": "🔨",
+        "description": "Hit as many moles as you can in 30 seconds."
+      }
     ]
   },
-
   "extras": [
     {
       "title": "Football",
       "subtitle": "College Football Team",
       "icon": "⚽",
-      "description": "Football has been a huge part of my life. I played for my college team, representing the college in inter-college tournaments. It taught me teamwork, discipline and how to stay calm under pressure — lessons I carry into every project.",
+      "description": "Football has been a big part of my life. I played for my college team at SJCIT and represented the college in matches against other colleges. It taught me teamwork, discipline and how to stay calm under pressure.",
       "highlights": [
-        "Played for the college team throughout my degree",
-        "Competed in inter-college and university tournaments",
-        "Still play weekend 5-a-side with friends"
+        "Played for the SJCIT college football team",
+        "Represented the college in inter-college matches"
       ],
       "stats": [
-        { "label": "Position", "value": "Forward" },
-        { "label": "Seasons", "value": "4" },
-        { "label": "Team", "value": "College XI" }
+        {
+          "label": "Team",
+          "value": "SJCIT"
+        },
+        {
+          "label": "Sport",
+          "value": "Football"
+        }
       ],
       "photos": [
-        { "src": "images/football.svg", "caption": "With the college team" }
+        {
+          "src": "images/football.svg",
+          "caption": "With the college team"
+        }
       ]
     }
   ],
-
   "contact": {
     "heading": "Let's work together",
     "message": "Have a project, an opportunity, or just want to talk football? My inbox is always open."

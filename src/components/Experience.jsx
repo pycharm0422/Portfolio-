@@ -1,4 +1,5 @@
 import Section from './Section.jsx';
+import { dateRange } from '../utils.js';
 
 export default function Experience({ items }) {
   return (
@@ -7,7 +8,7 @@ export default function Experience({ items }) {
         {items.map((x, i) => (
           <article key={i} className="timeline-item card">
             <div className="timeline-meta">
-              <span className="date">{x.start} — {x.end}</span>
+              <span className="date">{dateRange(x)}</span>
               {x.location && <span className="muted small">{x.location}</span>}
             </div>
             <h3>

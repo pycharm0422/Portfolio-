@@ -14,9 +14,9 @@ Edit `src/data/portfolio.json` and push. GitHub Actions rebuilds and redeploys t
 
 | Want to… | Do this in `portfolio.json` |
 | --- | --- |
-| Add a job | Add an object to `experience` |
+| Add a job | Add an object to `experience` (use `start`/`end`, or `period` for free text like `"6 months"`) |
 | Add a degree / course | Add an object to `education` |
-| Add a skill | Add `{ "name": "Go", "level": 70 }` to a group in `expertise` (the `level` is optional) |
+| Add a skill | Add `"Go"` to a group in `expertise` (or `{ "name": "Go", "level": 70 }` to show a progress bar) |
 | Add a project | Add an object to `projects` (`image`, `github`, `live` are optional) |
 | Add a hobby / extra | Add an object to `extras` (e.g. copy the Football entry) |
 | Hide a game | Set `"enabled": false` on it in `games.list` |

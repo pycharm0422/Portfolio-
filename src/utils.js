@@ -22,3 +22,9 @@ export function storageSet(key, value) {
     /* storage unavailable — ignore */
   }
 }
+
+// "Jun 2023 — Present", or a free-text "period" when exact dates aren't known.
+export function dateRange(item) {
+  if (item.period) return item.period;
+  return [item.start, item.end].filter(Boolean).join(' — ');
+}

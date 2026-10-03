@@ -349,3 +349,6 @@ main > div:nth-child(odd) .section { background: var(--bg-2); }
   transition: bottom 0.15s ease-out; pointer-events: none;
 }
 .mole.up { bottom: 12%; }
+
+.skill-chips { margin-top: 1rem; }
+.skill-chips .tag { font-size: 0.85rem; padding: 0.3rem 0.7rem; }
